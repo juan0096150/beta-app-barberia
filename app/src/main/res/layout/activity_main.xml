@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:layout_gravity="top"
+        android:layout_marginTop="16dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carViewSlider"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="20dp">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_period="1000"
+                    app:iss_title_background="@color/black" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pureman"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="38sp"
+                android:layout_gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/text_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido a nuestra barbería"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/intro"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_clock"
+                    app:tint="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Horario de apertura"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:paddingStart="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servicios"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:paddingBottom="8dp" />
+
+            <!-- Service items can be dynamically added here -->
+            <LinearLayout
+                android:id="@+id/layout_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Example item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_haircut"
+                        app:tint="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Corte"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:paddingStart="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$00.000"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_haircut"
+                        app:tint="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Barba"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:paddingStart="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$00.000"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_haircut"
+                        app:tint="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mascarilla"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:paddingStart="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$00.000"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_haircut"
+                        app:tint="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cera"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:paddingStart="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$00.000"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <!-- Add more items similarly -->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_ready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Listo para un cambio?"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/text_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reserva una cita con nosotros hoy mismo"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:paddingBottom="16dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/button_reservar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="goToService"
+                android:text="Reservar"
+                android:textSize="24sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

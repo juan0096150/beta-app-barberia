@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema Oscuro -->
+    <style name="Theme.BarbershopApp.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryVariant">@color/dark_primary_variant</item>
+        <item name="colorOnPrimary">@color/dark_on_primary</item>
+        <item name="colorSecondary">@color/dark_secondary</item>
+        <item name="colorSecondaryVariant">@color/dark_secondary_variant</item>
+        <item name="colorOnSecondary">@color/dark_on_secondary</item>
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnBackground">@color/dark_on_background</item>
+        <item name="colorOnSurface">@color/dark_on_surface</item>
+        <item name="android:statusBarColor">@color/dark_primary</item>
+        <item name="android:navigationBarColor">@color/dark_primary</item>
+    </style>
+    <style name="CustomDatePickerStyle" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSurface">@color/dark_background</item>
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="materialCalendarHeaderToggleButton">@color/white</item>
+    </style>
+
+    <style name="CustomTimePickerStyle" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSurface">@color/dark_background</item>
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>

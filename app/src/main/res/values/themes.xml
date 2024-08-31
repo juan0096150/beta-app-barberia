@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema Base -->
+    <style name="Theme.BarbershopApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores primarios -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <!-- Colores secundarios -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <!-- Colores de fondo -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnBackground">@color/on_background</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <!-- Barra de estado -->
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <!-- Estilo de texto predeterminado -->
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <!-- Navigation bar color. -->
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+    </style>
+
+    <style name="Theme.BarbershopApp.Light" parent="Theme.BarbershopApp">
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorPrimaryVariant">@color/light_primary_variant</item>
+        <item name="colorOnPrimary">@color/light_on_primary</item>
+        <item name="colorSecondary">@color/light_secondary</item>
+        <item name="colorSecondaryVariant">@color/light_secondary_variant</item>
+        <item name="colorOnSecondary">@color/light_on_secondary</item>
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorOnBackground">@color/light_on_background</item>
+        <item name="colorOnSurface">@color/light_on_surface</item>
+    </style>
+
+
+</resources>

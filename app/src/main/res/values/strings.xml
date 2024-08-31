@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">barberia</string>
+    <string name="intro">Ofrecemos los mejores servicios de peluquería de la ciudad. Nuestros barberos son expertos en afeitados con navaja recta, recortes de barba y cortes de pelo.</string>
+    <string-array name="servicio">
+        <item>Corte</item>
+        <item>Pendiente</item>
+        <item>En espera</item>
+    </string-array>
+</resources>
